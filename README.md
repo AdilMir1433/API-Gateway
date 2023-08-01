@@ -1,9 +1,7 @@
 
-# User Service
+# API Gateway
 
-A micro service to maintain and manipulate the user data. Contains Roles of an ADMIN, STUDENT and TEACHER. 
-
-Communicates with a database to maintain Data. Communicates with other microservices.
+A micro service to route users request to appropiate controllers. Takes names of services from eureka server
 
 
 
@@ -18,7 +16,7 @@ Communicates with a database to maintain Data. Communicates with other microserv
 Clone the project
 
 ```bash
-  git clone https://github.com/AdilMir1433/User-Service
+  git clone https://github.com/AdilMir1433/API-Gateway/
 ```
 
 Go to the project directory
@@ -42,8 +40,5 @@ Start the server
 
 ## Features
 
-- Multiple roles (ADMIN, STUDENT , TEACHER)
-- Only admin creates Accounts
-- Admin Approves Quizzes
-- Inter Communication
+- Router
 
