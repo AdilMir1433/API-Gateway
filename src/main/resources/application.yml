@@ -4,20 +4,16 @@ spring:
   cloud:
     gateway:
       routes:
-#        - id: user-interface
-#          uri: lb://user-interface
-#          predicates:
-#            - Path=/user-interface/**
-#          filters:
-#            - StripPrefix=1
-
-# Path: User-Interface/src/main/resources/application.yml
         - id: user-service
           uri: lb://user-service
           predicates:
-            - Path=/**
-#          filters:
-#            - StripPrefix=1
+            - Path=/users/**
+
+        - id: exam-service
+          uri: lb://exam-service
+          predicates:
+            - Path=/exam/**
+
 
 server:
   port: 8080
